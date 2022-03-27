@@ -20,7 +20,7 @@ for word in word_list:
     if (original_word in word) or (original_word.capitalize() in word):
         # если слово есть в списке, или слово с заглавной буквы есть в списке
         if original_word.capitalize() in word:
-            word = word.replace(original_word.capitalize(), alternative_words_list_list[i].capitalize)
+            word = word.replace(original_word.capitalize(), alternative_words_list_list[i].capitalize())
             # слово с заглавной буквы меняем на слово из списка с заглавной буквы
         else:
             word = word.replace(original_word, alternative_words_list_list[i])
